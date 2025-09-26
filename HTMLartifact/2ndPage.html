@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    h1 {
+      background-color: #005555;
+      text-align: center;
+      padding: 40px;
+      margin: 40px;
+      font-size: 50px;
+    }
+  </style>
+  <style>
+    div {
+      background-color: #004455;
+      color: #ffffff;
+      font-size: 25px;
+      line-height: 2;
+      padding: 40px;
+      margin: 40px;
+    }
+  </style>
+  <style>
+    input {
+      background-color: #004455;
+      color: #ffffff;
+      font-size: 25px;
+      padding: 10px;
+      margin: 40px;
+    }
+  </style>
+</head>
+
+<h1 style="color:white">Results</h1>
+<body style="background-color: black;">
+
+<div>
+  <p id="First_Name"></p>
+  <p id="Last_Name"></p>
+  <p id="Email"></p>
+  <p id="Phone_Number"></p>
+  <p id="Food"></p>
+  <p id="Gross_Income"></p>
+  <p id="Income"></p>
+  <p id="Occupation"></p>
+  <p id="Aspiration"></p>
+  <p id="Residence"></p>
+  <p id="Resume"></p>
+  <p id="Opinion"></p>
+</div>
+
+<script>
+  // These two lines get data somehow
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+
+  const First_Name = urlParams.get('First_Name');
+  document.getElementById('First_Name').textContent = `First Name: ${First_Name}`;
+
+  const Last_Name = urlParams.get('Last_Name');
+  document.getElementById('Last_Name').textContent = `Last Name: ${Last_Name}`;
+
+  const Email = urlParams.get('Email');
+  document.getElementById('Email').textContent = `Email: ${Email}`;
+
+  const Phone_Number = urlParams.get('Phone_Number');
+  document.getElementById('Phone_Number').textContent = `Phone Number: ${Phone_Number}`;
+
+  const Food = urlParams.get('Food');
+  document.getElementById('Food').textContent = `Food: ${Food}`;
+
+  const Gross_Income = urlParams.get('Gross_Income');
+  document.getElementById('Gross_Income').textContent = `Income: ${Gross_Income}`;
+
+  const Income = urlParams.get('Income');
+  document.getElementById('Income').textContent = `Income: ${Income}`;
+
+  const Occupation = urlParams.get('Occupation');
+  document.getElementById('Occupation').textContent = `Occupation: ${Occupation}`;
+
+  const Aspiration = urlParams.get('Aspiration');
+  document.getElementById('Aspiration').textContent = `Aspiration: ${Aspiration}`;
+
+  const Residence = urlParams.get('Residence');
+  document.getElementById('Residence').textContent = `Residence: ${Residence}`;
+
+  const Resume = urlParams.get('Resume');
+  document.getElementById('Resume').textContent = `Resume: ${Resume}`;
+
+  const Opinion = urlParams.get('Opinion');
+  document.getElementById('Opinion').textContent = `Opinion: ${Opinion}`;
+</script>
+
+<div style="text-align: center;">
+
+  <a href="index.html">
+  <img src="Images/Congrats.png" alt="Congrats" width="20%" height="20%">
+  </a>
+
+<form action="index.html">
+
+  <label for="submit">
+  <input type="submit" id="submit" value="Return to quiz">
+
+</form>
+</div>
+
+</body>
+</html>

@@ -1,4 +1,12 @@
-let fortunes = ["Yes", "No", "You should ask your dog", "You should ask the person closest to you on your right", "Even if I knew the answer, I would run away with it while you chased meaninglessly", "Unfortunately it is better off that you are ignorant", "Unless you have $100, my output is sealed"];
+let fortunes = ["Yes",
+                        "No",
+                        "You should ask your dog",
+                        "You should ask the person closest to you on your right",
+                        "Even if I knew the answer",
+                        "I would run away with it while you chased meaninglessly",
+                        "Unfortunately it is better off that you are ignorant",
+                        "Unless you have $100, my output is sealed"
+                        ];
 
 // Hash function
 function cyrb128(str) {

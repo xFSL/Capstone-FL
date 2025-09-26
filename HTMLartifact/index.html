@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    h1 {
+      background-color: #005555;
+      text-align: center;
+      padding: 40px;
+      margin: 40px;
+      font-size: 50px;
+    }
+  </style>
+  <style>
+    h2 {
+      background-color: #4c8a8a;
+      text-align: center;
+      padding: 40px;
+      margin: 40px;
+      font-size: 30px;
+    }
+  </style>
+  <style>
+    p {
+    background-color: #004455;
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 2;
+    padding: 40px;
+    margin: 40px;
+  }
+  </style>
+  <style>
+    ul {
+      background-color: #004455;
+      color: #ffffff;
+      font-size: 23px;
+      line-height: 2;
+      padding: 40px;
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-top: -110px;
+    }
+  </style>
+  <style>
+     form {
+       background-color: #004455;
+       color: #ffffff;
+       font-size: 23px;
+       line-height: 2;
+       padding: 40px;
+       margin: 40px;
+     }
+  </style>
+</head>
+<body style="background-color: black;">
+
+<h1 style="color:white">Welcome to the quiz</h1>
+<h2 style="color:white">By Firwin Lee</h2>
+
+<p>Please prepare the following documents/information:</p>
+
+<ul>
+  <li>W2 Form</li>
+  <li>Form I-9</li>
+  <li>1099 Forms</li>
+  <li>Gross income</li>
+  <li>Phone Number</li>
+  <li>Social Security Number</li>
+  <li>Records of investments and property</li>
+  <li>Whether you like chicken, beef, or mushroom more?</li>
+  <li>Bank Account (or other savings account) information</li>
+  <li>Reason for filling out this form</li>
+  <li>Letter of Recommendation</li>
+  <li>Previous work experience</li>
+  <li>Previous Schooling</li>
+  <li>Past Projects</li>
+  <li>Achievements</li>
+  <li>Aspirations</li>
+  <li>Hot Takes</li>
+</ul>
+
+<form action="2ndPage.html" method="GET">
+  <label for="First_Name">Last Name:</label>
+  <input type="text" id="First_Name" name="First_Name" placeholder="First Name"><br>
+  <label for="Last_Name">Last Name:</label>
+  <input type="text" id="Last_Name" name="Last_Name" placeholder="Last Name"><br>
+
+  <label for="Email">Email:</label>
+  <input type="email" id="Email" name="Email" placeholder="part.part@email.com"><br>
+
+  <label for="Phone_Number">Phone Number:</label>
+  <input type="text" id="Phone_Number" name="Phone_Number" placeholder="(xxx) - xxx - xxxx"><br><br>
+
+  <label>Please select whether you like chicken, beef, or mushrooms more</label><br>
+
+  <input type="radio" name="Food"> Chicken <br>
+  <input type="radio" name="Food"> Beef <br>
+  <input type="radio" name="Food"> Mushrooms<br> <br>
+
+  <label for="Gross_Income">Gross Income:</label>
+  <input type="text" id="Gross_Income" name="Gross_Income" placeholder="Income before taxes"><br>
+
+  <label for="Expected_Income">Expected Income:</label>
+  <input type="text" id="Expected_Income" name="Income" placeholder="Expected Income in the next year"><br>
+
+  <label for="Occupation">What do you do for a living?</label>
+  <input type="text" id="Occupation" name="Occupation" placeholder="Current occupation"><br>
+
+  <label for="Aspirations">What is something that if you were paid to do, you would feel bad for taking someone else's money?</label>
+  <input type="text" id="Aspirations" name="Aspirations" placeholder="Dreams"><br>
+
+  <label for="Portfolio">Investment Portfolio</label>
+  <input type="file" id="Portfolio" name="Portfolio" placeholder="Upload Here"><br>
+
+  <label for="Residence">Record of residence</label>
+  <input type="file" id="Residence" name="Residence" placeholder="Upload Here"><br>
+
+  <label for="Resume">Resume</label>
+  <input type="file" id="Resume" name="Resume" placeholder="Upload Here"><br>
+
+  <label for="Opinion">Other Opinions?</label>
+  <input type="text" id="Opinion" name="Opinion" placeholder="Hot Take"><br>
+
+  <div
+      style="text-align: center;
+      background-color: #004455;
+      color: #ffffff;
+      font-size: 25px;
+      padding: 10px;
+      margin: 40px;"
+  >
+
+    <input type="submit">
+
+  </div>
+
+</form>
+
+<div style="text-align: center;">
+  <a href="2ndPage.html">
+  <img src="Images/Picture.png" alt="Congrats" width="20%" height="20%">
+  </a>
+</div>
+
+</body>
+</html>
