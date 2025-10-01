@@ -37,18 +37,19 @@
 <body style="background-color: black;">
 
 <div>
-  <p id="First_Name"></p>
-  <p id="Last_Name"></p>
-  <p id="Email"></p>
-  <p id="Phone_Number"></p>
-  <p id="Food"></p>
-  <p id="Gross_Income"></p>
-  <p id="Income"></p>
-  <p id="Occupation"></p>
-  <p id="Aspiration"></p>
-  <p id="Residence"></p>
-  <p id="Resume"></p>
-  <p id="Opinion"></p>
+    <p id="First_Name"></p>
+    <p id="Last_Name"></p>
+    <p id="Email"></p>
+    <p id="Phone_Number"></p>
+    <p id="Food"></p>
+    <p id="Gross_Income"></p>
+    <p id="Income"></p>
+    <p id="Occupation"></p>
+    <p id="Aspiration"></p>
+    <p id="Schooling"></p>
+    <p id="Residence"></p>
+    <p id="Resume"></p>
+    <p id="Opinion"></p>
 </div>
 
 <script>
@@ -82,6 +83,9 @@
 
   const Aspiration = urlParams.get('Aspiration');
   document.getElementById('Aspiration').textContent = `Aspiration: ${Aspiration}`;
+
+  const Schooling = urlParams.get('Schooling');
+  document.getElementById('Schooling').textContent = `Schooling: ${Schooling}`;
 
   const Residence = urlParams.get('Residence');
   document.getElementById('Residence').textContent = `Residence: ${Residence}`;
